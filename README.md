@@ -1,2 +1,113 @@
-# Awesome-causal-time-series-anomaly-detection
-A curated collection of causality-based time-series anomaly detection and root-cause analysis papers with official code, datasets, and benchmarks
+Awesome Causal Time-Series Anomaly Detection
+============================================
+
+A curated collection of papers, official implementations, libraries, datasets, and benchmarks for causality-based time-series anomaly detection and root-cause analysis.
+
+Scope
+-----
+
+This collection includes work where causality is central to at least one of the following:
+
+1. Anomaly scoring or detection
+2. Granger-causal or structural-causal graph discovery
+3. Root-cause localization or intervention recognition
+4. Causality-aware representation learning
+5. Causal benchmarks for multivariate time series
+
+The main list prioritizes official author repositories. Papers without a verified official implementation are kept in a separate section.
+
+Verified papers with public code
+--------------------------------
+
+| Year | Method | Paper | Venue | Paper link | Code link | Main causal idea |
+|---:|---|---|---|---|---|---|
+| 2026 | CGT | Causally-Constrained Probabilistic Forecasting for Time-Series Anomaly Detection | arXiv | [Paper](https://arxiv.org/abs/2604.17998) | [Code](https://github.com/p-khn/CGT-V1) | Time-lagged causal graph masks a probabilistic forecasting model |
+| 2025 | AERCA | Root Cause Analysis of Anomalies in Multivariate Time Series through Granger Causal Discovery | ICLR | [Paper](https://openreview.net/forum?id=k38Th3x4d9) | [Code](https://github.com/hanxiao0607/AERCA) | Joint Granger causal discovery and intervention-based root-cause scoring |
+| 2025 | CAROTS | Causality-Aware Contrastive Learning for Robust Multivariate Time-Series Anomaly Detection | ICML | [Paper](https://arxiv.org/abs/2506.03964) | [Code](https://github.com/kimanki/CAROTS) | Causality-aware contrastive representation learning |
+| 2025 | causRCA | causRCA Dataset and Benchmarking Framework | Dataset and benchmark | Not available | [Code](https://github.com/causalgraph/causRCA) | Ground-truth causal structures and fault scenarios |
+| 2025 | CGAD | Entropy Causal Graphs for Multivariate Time Series Anomaly Detection | ACM TIST | [Paper](https://arxiv.org/abs/2312.09478) | [Code](https://github.com/falihgoz/CGAD) | Transfer-entropy causal graph with graph and temporal convolutions |
+| 2025 | RCAEval | RCAEval: A Benchmark for Root Cause Analysis of Microservice Systems with Telemetry Data | The Web Conference | [Paper](https://arxiv.org/abs/2412.17015) | [Code](https://github.com/phamquiluan/RCAEval) | Includes reproducible causal and graph-based RCA baselines |
+| 2024 | RUN | Root Cause Analysis in Microservice Using Neural Granger Causal Discovery | AAAI | [Paper](https://arxiv.org/abs/2402.01140) | [Code](https://github.com/zmlin1998/RUN) | Contrastive temporal encoder plus neural Granger discovery and personalized PageRank |
+| 2023 | EasyRCA | Root Cause Identification for Collective Anomalies in Time Series given an Acyclic Summary Causal Graph with Loops | AISTATS | [Paper](https://arxiv.org/abs/2303.04038) | [Code](https://github.com/ckassaad/EasyRCA) | Causal graph, anomaly timing, d-separation, and direct-effect changes |
+| 2023 | PyRCA | PyRCA: A Library for Metric-based Root Cause Analysis | arXiv / open-source library | [Paper](https://arxiv.org/abs/2306.11417) | [Code](https://github.com/salesforce/PyRCA) | Unified causal-graph construction and graph-based RCA methods |
+| 2022 | CIRCA | Causal Inference-Based Root Cause Analysis for Online Service Systems with Intervention Recognition | KDD | [Paper](https://arxiv.org/abs/2206.05871) | [Code](https://github.com/NetManAIOps/CIRCA) | Recognizes interventions through changes in conditional mechanisms |
+
+Papers awaiting official code
+-----------------------------
+
+| Year | Method | Paper | Venue | Paper link | Code status | Main causal idea |
+|---:|---|---|---|---|---|---|
+| 2026 | CAAD | CAAD: Causality-Aware Multivariate Time Series Anomaly Detection via Multi-Scale Alignment and Structural Causal Consistency | arXiv | [Paper](https://arxiv.org/abs/2607.08555) | No official code located | Continuous verification of Granger-causal consistency |
+| 2025 | GCAD | GCAD: Anomaly Detection in Multivariate Time Series from the Perspective of Granger Causality | arXiv | [Paper](https://arxiv.org/abs/2501.13493) | No official code located | Dynamic gradient-based Granger-causality discovery |
+| 2025 | OracleAD | Structured Temporal Causality for Interpretable Multivariate Time-Series Anomaly Detection | arXiv | [Paper](https://arxiv.org/abs/2510.16511) | No official code located | Structured temporal causal modeling |
+| 2023 | CausalAD | A Causal Approach to Detecting Multivariate Time-Series Anomalies and Root Causes | ICLR | [Paper](https://arxiv.org/abs/2206.15033) | No official standalone code located | Detects violations of local causal mechanisms |
+
+Recommended reading order
+-------------------------
+
+1. CausalAD for the local-causal-mechanism view of anomaly detection
+2. CIRCA and EasyRCA for causal root-cause analysis
+3. RUN and AERCA for neural Granger-causal discovery
+4. CGAD for transfer-entropy causal graphs
+5. CAROTS for causality-aware contrastive learning
+6. CGT for causal constraints in probabilistic forecasting
+
+Repository files
+----------------
+
+| File | Purpose |
+|---|---|
+| README.md | Human-readable paper collection |
+| papers.csv | Sortable and machine-readable metadata |
+| CONTRIBUTING.md | Rules for adding papers and repositories |
+| CITATION.cff | Citation metadata for this collection |
+| scripts/validate_links.py | Checks whether paper and code links are reachable |
+
+Important copyright and license rule
+------------------------------------
+
+This repository links to external implementations. It does not copy or redistribute another author's code.
+
+Before reusing an implementation:
+
+1. Read the original repository's license
+2. Preserve required copyright and license notices
+3. Cite the associated paper
+4. Mark unofficial implementations clearly
+5. Do not redistribute code that has no reuse license
+
+Contribution criteria
+---------------------
+
+A submission should include:
+
+1. Full paper title
+2. Publication year and venue
+3. Paper URL
+4. Official code URL, when available
+5. Causal mechanism or causal-learning component
+6. Time-series task and datasets
+7. Repository license
+8. Official or unofficial code status
+
+Quality labels
+--------------
+
+Use one of these code-status labels:
+
+- Official
+- Official resource
+- Unofficial reproduction
+- Code announced
+- No official code located
+- Link unavailable
+
+Search keywords
+---------------
+
+causal time-series anomaly detection, multivariate time-series anomaly detection, Granger causality, causal discovery, structural causal model, root-cause analysis, intervention recognition, causal graph, AIOps, industrial monitoring
+
+Disclaimer
+----------
+
+Metadata can change when preprints are accepted or repositories are released. Verify paper versions, venues, and licenses before reuse.
