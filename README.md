@@ -36,27 +36,6 @@ Papers
 | 2023 | CausalAD | A Causal Approach to Detecting Multivariate Time-Series Anomalies and Root Causes | ICLR | [Paper](https://arxiv.org/abs/2206.15033) |  | Detects violations of local causal mechanisms |
 | 2022 | CIRCA | Causal Inference-Based Root Cause Analysis for Online Service Systems with Intervention Recognition | KDD | [Paper](https://arxiv.org/abs/2206.05871) | [Code](https://github.com/NetManAIOps/CIRCA) | Recognizes interventions through changes in conditional mechanisms |
 
-Recommended reading order
--------------------------
-
-1. CausalAD for the local-causal-mechanism view of anomaly detection
-2. CIRCA and EasyRCA for causal root-cause analysis
-3. RUN and AERCA for neural Granger-causal discovery
-4. CGAD for transfer-entropy causal graphs
-5. CAROTS for causality-aware contrastive learning
-6. CGT for causal constraints in probabilistic forecasting
-
-Repository files
-----------------
-
-| File | Purpose |
-|---|---|
-| README.md | Human-readable paper collection |
-| papers.csv | Sortable and machine-readable metadata |
-| CONTRIBUTING.md | Rules for adding papers and repositories |
-| CITATION.cff | Citation metadata for this collection |
-| scripts/validate_links.py | Checks whether paper and code links are reachable |
-
 Important copyright and license rule
 ------------------------------------
 
@@ -69,20 +48,6 @@ Before reusing an implementation:
 3. Cite the associated paper
 4. Mark unofficial implementations clearly
 5. Do not redistribute code that has no reuse license
-
-Contribution criteria
----------------------
-
-A submission should include:
-
-1. Full paper title
-2. Publication year and venue
-3. Paper URL
-4. Official code URL, when available
-5. Causal mechanism or causal-learning component
-6. Time-series task and datasets
-7. Repository license
-8. Official or unofficial code status
 
 Quality labels
 --------------
