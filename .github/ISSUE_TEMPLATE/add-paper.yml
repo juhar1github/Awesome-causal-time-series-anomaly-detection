@@ -1,0 +1,40 @@
+name: Add a paper
+description: Suggest a causality-based time-series anomaly detection or RCA paper
+title: "Add paper: "
+labels:
+  - paper
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: Paper URL
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code URL
+  - type: dropdown
+    id: status
+    attributes:
+      label: Code status
+      options:
+        - Official
+        - Official resource
+        - Unofficial reproduction
+        - Code announced
+        - No official code located
+    validations:
+      required: true
+  - type: textarea
+    id: causality
+    attributes:
+      label: How is causality used?
+    validations:
+      required: true
