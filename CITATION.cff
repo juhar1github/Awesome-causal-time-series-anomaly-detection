@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using the curated collection."
+title: "Awesome Causal Time-Series Anomaly Detection"
+type: dataset
+authors:
+  - name: "juhar1github"
+year: 2026
+license: MIT
+repository-code: "https://github.com/juhar1github/Awesome-causal-time-series-anomaly-detection"
+keywords:
+  - time-series anomaly detection
+  - causal discovery
+  - Granger causality
+  - root-cause analysis
