@@ -49,18 +49,6 @@ Before reusing an implementation:
 4. Mark unofficial implementations clearly
 5. Do not redistribute code that has no reuse license
 
-Quality labels
---------------
-
-Use one of these code-status labels:
-
-- Official
-- Official resource
-- Unofficial reproduction
-- Code announced
-- No official code located
-- Link unavailable
-
 Search keywords
 ---------------
 
